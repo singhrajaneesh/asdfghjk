@@ -1,0 +1,123 @@
+<com.ekant.justbiz.ModSwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:clickToClose="true">
+
+    <RelativeLayout
+        android:tag="Bottom1"
+        android:background="@drawable/red"
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="wrap_content"
+        android:weightSum="1"
+        android:layout_height="90dp">
+
+
+        <!--android:layout_height="@dimen/adaptersavetags_rl_layoutheight"-->
+
+
+        <ImageView
+            android:id="@+id/trash2"
+            android:src="@drawable/ico_messages1"
+            android:layout_width="@dimen/adaptersavetags_imageview_layout_width"
+            android:background="@color/dash_adaptersavetag_imageviewcolor"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/adaptersavetags_imageview_paddingLeft"
+            android:paddingRight="@dimen/adaptersavetags_imageview_paddingRight"
+            android:onClick="sendClick"
+            android:layout_height="90dp" />
+
+
+        <!--android:layout_height="@dimen/adaptersavetags_imageview_layout_height"-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:tag="Bottom4"
+        android:id="@+id/bottom_wrapper_2"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp">
+
+        <!--android:layout_height="@dimen/adaptersavetags_LinearLayout_layout_height"-->
+        <!--<ImageView-->
+            <!--android:id="@+id/magnifier2"-->
+            <!--android:src="@drawable/ico_edit"-->
+            <!--android:layout_width="@dimen/adaptersavetags_LinearLayout_imageview_layout_width"-->
+            <!--android:background="@color/dash_adaptersavetags"-->
+            <!--android:paddingLeft="@dimen/adaptersavetags_LinearLayout_imageview_paddingLeft"-->
+            <!--android:paddingRight="@dimen/adaptersavetags_LinearLayout_imageview_paddingRight"-->
+            <!--android:layout_height="@dimen/adaptersavetags_LinearLayout_imageview_layout_height" />-->
+
+        <ImageView
+            android:id="@+id/trash"
+            android:src="@drawable/ico_delete"
+            android:layout_width="@dimen/adaptersavetags_LinearLayout_imageview2_layout_width"
+            android:background="@color/dash_adaptersavetags2"
+            android:paddingLeft="@dimen/adaptersavetags_LinearLayout_imageview2_paddingLeft"
+            android:paddingRight="@dimen/adaptersavetags_LinearLayout_imageview2_paddingRight"
+            android:layout_height="90dp"
+            android:onClick="deleteclick"/>
+
+        <!--android:layout_height="@dimen/adaptersavetags_LinearLayout_imageview2_layout_height"-->
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id= "@+id/vertical1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+        android:layout_height="@dimen/adaptersavetags_LinearLayout2_layout_height"
+
+        <TextView
+            android:id = "@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginLeft"
+            android:textColor="@color/activity_Image_layout_background_color"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+
+        <!--android:layout_marginTop="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginTop"-->
+
+
+        <TextView
+            android:id = "@+id/category"
+            android:textSize="16dp"
+            android:layout_marginLeft="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:textColor="@color/clickimagechangecolor"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:id = "@+id/subcategory"
+            android:textSize="14dp"
+            android:layout_marginLeft="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:textColor="@color/dash_adapertsavegivetags4"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:id = "@+id/vertical"
+            android:textSize="13dp"
+            android:layout_marginLeft="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:textColor="#939393"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:maxLines="2"
+
+            />
+        <!--android:layout_marginBottom="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginBottom"-->
+
+        <!--android:textSize="@dimen/adaptersavetags_LinearLayout2_Textview_textsize"-->
+
+    </LinearLayout>
+</com.ekant.justbiz.ModSwipeLayout>

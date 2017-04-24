@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ekant.justbiz.Videos"
+    android:background="@color/ls_background">
+    <WebView
+        android:id="@+id/mWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        >
+
+        <!--android:layout_width="@dimen/videos_webview_layout_width"-->
+        <!--android:layout_height="@dimen/videos_webview_layout_height"-->
+
+    </WebView>
+    <LinearLayout
+        android:id="@+id/linearLayouttextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ls_background2">
+        <TextView
+            android:id ="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/videos_textview_layout_height"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:drawableRight="@drawable/proceed"
+            android:text="@string/videos_button_message"
+            android:clickable="true"
+            android:onClick="show"
+            android:background="@color/ls_background2"
+            android:textSize="@dimen/videos_textview_textsize"
+            android:textColor="@color/White_ls"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+</RelativeLayout>

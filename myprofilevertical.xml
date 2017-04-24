@@ -1,0 +1,59 @@
+<RelativeLayout
+    android:id="@+id/vertical1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id = "@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/adaptermyprofileverticals_TextView_layout_marginLeft"
+            android:textColor="@color/pc_savegivetags"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+
+            />
+
+
+
+    <!--android:layout_marginTop="@dimen/adaptermyprofileverticals_TextView_layout_marginTop"-->
+
+        <TextView
+            android:id = "@+id/category"
+            android:textSize="16dp"
+            android:layout_marginLeft="@dimen/adaptermyprofileverticals_TextView_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:textColor="@color/LightGray_pc"
+            android:layout_below="@+id/name"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:id = "@+id/subcategory"
+
+            android:layout_marginLeft="@dimen/adaptermyprofileverticals_TextView_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:maxLines="2"
+            android:textColor="@color/pc_graytextcolor"
+            android:layout_below="@+id/category"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:id = "@+id/vertical"
+            android:textSize="14dp"
+            android:layout_marginLeft="@dimen/adaptermyprofileverticals_TextView_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:maxLines="3"
+            android:textColor="@color/pc_lightgraytextcolor"
+            android:layout_below="@+id/subcategory"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/adaptermyprofileverticals_TextView_layout_margin_Bottom"
+            />
+    </RelativeLayout>
+

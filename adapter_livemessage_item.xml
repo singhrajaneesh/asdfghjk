@@ -1,0 +1,148 @@
+<com.ekant.justbiz.ModSwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:tag="Bottom1"
+        android:background="@color/White_Dash"
+        android:id="@+id/bottomwrapper"
+        android:layout_width="wrap_content"
+        android:weightSum="1"
+        android:layout_height="@dimen/adaptet_livemessage_item_LinearLayout_layout_height">
+        <ImageView
+            android:id="@+id/chat"
+            android:src="@drawable/right"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="@dimen/adaptet_livemessage_item_imageview_layout_width"
+            android:background="@drawable/red"
+            android:onClick="likemsg"
+            android:paddingLeft="@dimen/adaptet_livemessage_item_imageview_paddingLeft"
+            android:paddingRight="@dimen/adaptet_livemessage_item_imageview_paddingRight"
+            android:layout_height="98dp" />
+
+        <!--android:layout_width="@dimen/adaptet_livemessage_item_imageview_layout_width"-->
+        <!--android:layout_height="@dimen/adaptet_livemessage_item_imageview_layout_height" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:tag="Bottom4"
+        android:id="@+id/bottomwrapper2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/adaptet_livemessage_item_LinearLayout_layout_height">
+
+        <ImageView
+            android:id="@+id/trashdashboard"
+            android:src="@drawable/ico_delete"
+            android:onClick="trashmsg23"
+            android:layout_width="@dimen/adaptet_livemessage_item_imageview_layout_width"
+            android:background="@color/chat_livemessagecolor_code2_red"
+            android:paddingLeft="@dimen/adaptet_livemessage_item_imageview_paddingLeft"
+            android:paddingRight="@dimen/adaptet_livemessage_item_imageview_paddingRight"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="98dp" />
+
+        />
+
+
+
+        <!--android:layout_height="@dimen/adaptet_livemessage_item_imageview_layout_height" />-->
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id= "@+id/chatlayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="@dimen/adaptet_livemessage_item_rl_paddingLeft"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linearLayoutlivemessaging"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/liveimageview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo"
+                android:background="@drawable/frame"
+                />
+        </LinearLayout>
+
+
+        <!--android:layout_width="@dimen/adaptercategories_imageview_layout_width"-->
+        <!--android:layout_height="@dimen/adaptercategories_imageview2_layout_height"-->
+
+        <LinearLayout
+            android:id="@+id/linearlayoutlive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/adaptet_livemessage_item_LinearLayout_padding"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/linearLayoutlivemessaging">
+
+            <TextView
+                android:id= "@+id/companyname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dash_adapertsavegivetags3"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_centerVertical="true" />
+
+            android:textSize="@dimen/adaptet_livemessage_item_textview_textsize1"
+
+
+            <TextView
+                android:id= "@+id/Fromcompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dash_background_getVertical"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_centerVertical="true" />
+
+
+
+            <TextView
+                android:id= "@+id/fromindustries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dash_adapertsavegivetags4"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id= "@+id/companysubname2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dash_adapertsavegivetags5"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:maxLines="2"
+                android:layout_centerVertical="true" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</com.ekant.justbiz.ModSwipeLayout>
+

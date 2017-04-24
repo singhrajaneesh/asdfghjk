@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:background="@color/dash_navigation_color"
+    >
+    <ImageView
+        android:id = "@+id/userlogo"
+        android:layout_width="@dimen/navigationheader_imageview_layout_width"
+        android:layout_height="@dimen/navigationheader_imageview_layout_height"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/navigationheader_imageview_layout_marginTop"
+        android:layout_marginLeft="@dimen/navigationheader_imageview_layout_marginLeft"
+        android:layout_marginBottom="@dimen/navigationheader_imageview_layout_marginBottom"
+        android:layout_marginRight="@dimen/navigationheader_imageview_layout_marginRight"
+        android:padding="@dimen/navigationheader_imageview_padding"
+        android:src="@drawable/contact"
+        android:background="@drawable/framenavigationdrawer"
+
+        />
+
+    <!--android:layout_margin="10dp"-->
+
+    <TextView
+        android:id = "@+id/tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:text="Welcome to JustBusinesses"
+        android:textColor="@color/White_Dash"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:layout_marginLeft="20dp"
+       />
+
+    <TextView
+        android:id = "@+id/emailid"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+
+
+
+</LinearLayout>

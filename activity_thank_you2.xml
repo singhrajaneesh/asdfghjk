@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekant.justbiz.ThankYou">
+
+    <!-- rl1-->
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activitychangepasswordthankyou_rl1_layout_margin"
+        android:layout_alignParentTop="true">
+
+        <!-- rl2-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activitychangepasswordthankyou_rl1_rl2_layout_marginTop"
+            >
+            <TextView
+                android:id="@+id/heading"
+                android:text="@string/thankyouhelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black_News"
+                android:textSize="@dimen/activitychangepasswordthankyou_rl1_rl2_textview_textsize"
+                android:layout_marginTop="@dimen/activitychangepasswordthankyou_rl1_rl2_textview_layout_marginTop"
+                android:layout_centerVertical="true"
+
+                />
+            <ImageView
+                android:layout_width="@dimen/activitychangepasswordthankyou_rl1_rl2_imageview_layout_width"
+                android:layout_height="@dimen/activitychangepasswordthankyou_rl1_rl2_imageview_layout_height"
+                android:id="@+id/image"
+                android:src="@drawable/airicon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/msgtext1"
+            android:text="@string/thankuout_messageSent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black_News"
+            android:layout_below="@+id/heading"
+            android:textSize="@dimen/activiryresendemail_textview_textSize"
+            android:layout_marginTop="@dimen/activitychangepasswordthankyou_textview_layout_marginTop"
+            android:gravity="center"
+
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activitychangepasswordthankyou_button_layout_marginTop"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/msgtext1"
+            android:text="@string/activitythankyou_button_text"
+            android:textSize="@dimen/activitychangepasswordthankyou_button_textSize"
+            android:textColor="@color/White_News"
+            android:background="@drawable/buttonvorner"
+            android:onClick="calldashboard"/>
+    </RelativeLayout>
+
+</RelativeLayout>

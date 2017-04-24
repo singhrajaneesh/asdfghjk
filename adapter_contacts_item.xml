@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+
+    <ImageView
+        android:id= "@+id/contactprofileimage"
+        android:layout_width="@dimen/adaptercategories_imageview_layout_width"
+        android:layout_height="@dimen/adaptercategories_imageview2_layout_height"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/adaptercategories_imageview_layout_marginTop"
+        android:layout_marginBottom="@dimen/adaptercategories_imageview_layout_marginBottom"
+        android:layout_marginLeft="@dimen/adaptercategories_imageview_layout_marginLeft"
+        android:onClick="viewprofile"
+        android:background="@drawable/frame"
+        />
+    <TextView
+        android:id= "@+id/profiletext"
+        android:layout_width="@dimen/adaptercategories_textview_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/contactprofileimage"
+        android:layout_marginLeft="@dimen/adaptercategories_textview_layout_marginLeft"
+        android:textColor="@color/chat_background3"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:layout_marginTop="11dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/friendcompanyname"
+        android:layout_width="@dimen/adaptercategories_textview_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/contactprofileimage"
+        android:layout_marginLeft="@dimen/adaptercategories_textview_layout_marginLeft"
+        android:textColor="@color/chat_cantact_Second"
+        android:layout_below="@+id/profiletext"
+        android:gravity="left"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/friendindustries"
+        android:layout_width="@dimen/adaptercategories_textview_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/contactprofileimage"
+        android:layout_marginLeft="@dimen/adaptercategories_textview_layout_marginLeft"
+        android:textColor="@color/Black_chat"
+        android:layout_below="@+id/friendcompanyname"
+        android:gravity="left"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/msgcount"
+        android:layout_width="@dimen/adaptercategories_textview2_layout_width"
+        android:layout_height="@dimen/adaptercategories_textview2_layout_height"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/adaptercategories_textview2_textSize"
+        android:textColor="@color/Black_chat"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/adaptercategories_textview2_layout_marginRight"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circle_background"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

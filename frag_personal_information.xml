@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_pc"
+    android:id="@+id/detaillayout1"
+    tools:context="com.ekant.justbiz.ActivityEditProfile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/detaillayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/fragcompanyinfo_ll1_layout_marginTop"
+            android:layout_marginRight="@dimen/fragcompanyinfo_ll1_layout_marginRight"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="@dimen/fragcompanyinfo_ll1_layout_marginLeft">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/fname12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:hint="@string/FragPersonalInfo_EditText_hint1"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:fontFamily="sans-serif"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+
+                />
+</android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/lname12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragPersonalInfo_EditText_hint2"
+                android:inputType="textCapSentences"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+</android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/email12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragPersonalInfo_EditText_hint3"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:inputType="textEmailAddress"
+                android:fontFamily="sans-serif"
+                android:maxLength="40"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/mobile12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragPersonalInfo_EditText_hint4"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:fontFamily="sans-serif"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                />
+
+</android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragprersonalinfo_button_name"
+                android:textSize="16dp"
+                android:textColor="@color/White_pc"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="@dimen/fragcompanyinfo_button_layout_marginTop"
+                android:background="@drawable/buttonvorner"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+</RelativeLayout>

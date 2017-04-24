@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/ls_background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- ll1-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/fraglogin_ll1_layout_marginLeft"
+            android:layout_marginRight="@dimen/fraglogin_ll1_layout_marginRight"
+            >
+            <!-- rl1-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fraglogin_rl1_layout_marginTop">
+                <TextView
+                    android:id="@+id/textviewmsglogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textSize="@dimen/fraglogin_rl1_textview_textSize"
+                    android:textColor="@color/White_ls"
+                    android:layout_centerVertical="true" />
+                <ImageView
+                    android:layout_width="@dimen/fraglogin_rl1_imageview_layout_width"
+                    android:layout_height="@dimen/fraglogin_rl1_imageview_layout_height"
+                    android:id="@+id/image"
+                    android:src="@drawable/login_icon_grey"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <!-- rl2-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:id="@+id/alertimage"
+                        android:layout_marginTop="@dimen/fraglogin_rl2_imageview_layout_marginTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ico_alert30"
+                        android:visibility="invisible" />
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fraglogin_rl2_textview_layout_marginTop"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/Black_ls"
+                        android:gravity="center_horizontal"
+                        android:layout_alignRight="@+id/alertimage"
+                        android:visibility="invisible"
+                        android:textSize="@dimen/fraglogin_rl2_textview_textsize">
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- edittext1-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="21dp"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fragloing_hint"
+                android:textColorHint="@color/ls_hintcolor"
+                android:textColor="@color/White_ls"
+                android:textSize="@dimen/fraglogin_edittext1_textSize"
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- edittext2-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:theme="@style/TextLabel"
+                >
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fragloing_hint2"
+                android:textSize="@dimen/fraglogin_edittext1_textSize"
+                android:password="true"
+                android:textColorHint="@color/ls_hintcolor"
+                android:textColor="@color/White_ls"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:imeOptions="actionDone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fraglogin_button_message"
+                android:textSize="@dimen/fraglogin_button_textsize"
+                android:textColor="@color/White_ls"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonvorner"/>
+            <!--android:layout_marginTop="@dimen/fraglogin_button_layout_marginTop"-->
+
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+</RelativeLayout>

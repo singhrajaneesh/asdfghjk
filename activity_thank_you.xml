@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_chat"
+    tools:context="com.ekant.justbiz.ActivityThankYou">
+    <ScrollView
+        android:id="@+id/ss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--ll1-->
+        <LinearLayout
+            android:id="@+id/llchangepassword"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/fraglogin_ll1_layout_marginLeft"
+            android:layout_marginRight="@dimen/fraglogin_ll1_layout_marginRight"
+            >
+
+            <!-- rl1-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/fraglogin_rl1_layout_marginTop">
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thank_you"
+                    android:textSize="@dimen/fraglogin_rl1_textview_textSize"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/Black_chat"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/fraglogin_rl1_imageview_layout_width"
+                    android:layout_height="@dimen/fraglogin_rl1_imageview_layout_height"
+                    android:id="@+id/image"
+                    android:src="@drawable/airicon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvPerson"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center"
+                android:text="@string/activitythankyou_textviewMessage"
+                android:textSize="@dimen/signupclick_textview_textSize"
+                android:textColor="@color/Black_chat"
+                android:layout_marginTop="@dimen/signupclick_textview_layout_marginTop"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                />
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activitythankyou_button_text"
+                android:textSize="@dimen/signupclick_button_textSize"
+                android:textColor="@color/White_chat"
+                android:layout_marginTop="@dimen/signupclick_button_layout_marginTop"
+                android:onClick="showactivity"
+                android:clickable="true"
+                android:background="@drawable/buttonvorner"/>
+
+            <TextView
+                android:id="@+id/missedopportunity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/missed_opportunity"
+                android:background="@color/chat_listviewHeader"
+                android:textSize="@dimen/fragforgotpassword_rl1_textview_textSize"
+                android:padding="10dp"
+                android:layout_marginTop="@dimen/signupclick_button_layout_marginTop"
+                android:textColor="@color/Black_chat"></TextView>
+        </LinearLayout>
+
+    </ScrollView>
+    <ExpandableListView
+        android:layout_marginTop="@dimen/activitythankyou_expandable_listview_layout_marginTop"
+        android:layout_below="@+id/ss"
+        android:background="@color/White_chat"
+        android:layout_marginLeft="@dimen/activitythankyou_expandable_listview_layout_marginLeft"
+        android:layout_marginRight="@dimen/activitythankyou_expandable_listview_layout_marginRight"
+        android:id="@+id/laptop_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </ExpandableListView>
+</RelativeLayout>

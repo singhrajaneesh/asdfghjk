@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/ls_background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ll1-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragsignup_ll1_layout_marginLeft"
+            android:layout_marginRight="@dimen/fragsignup_ll1_layout_marginRight"
+            android:layout_marginBottom="@dimen/fragsignup_ll1_layout_marginBottom">
+
+            <!-- rl1-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragsignup_rl1_layout_marginTop">
+
+                <TextView
+                    android:id="@+id/textviewmsgsignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sign_up"
+                    android:textSize="@dimen/fragsingup_rl1_textview_textSize"
+                    android:textColor="@color/White_ls"
+                    android:layout_centerVertical="true" />
+                <ImageView
+                    android:layout_width="@dimen/fragsingup_rl1_imageview_layout_width"
+                    android:layout_height="@dimen/fragsingup_rl1_imageview_layout_height"
+                    android:id="@+id/image"
+                    android:src="@drawable/signup_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <!-- rl2-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:id="@+id/alertimage"
+                        android:layout_marginTop="@dimen/fragsignup_rl2_imageview_layout_marginTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ico_alert30"
+                        android:visibility="invisible" />
+                    <TextView
+                        android:id="@+id/errortext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fragsignup_rl2_textview_layout_marginTop"
+                        android:textColor="@color/Black_ls"
+                        android:visibility="invisible"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:layout_alignRight="@+id/alertimage"
+                        android:textSize="@dimen/fragsignup_rl2_textview_textSize"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/TextLabel"
+                >
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fragSignup_hint1"
+                android:textColorHint="@color/ls_hintcolor"
+                android:textColor="@color/White_ls"
+                android:textSize="@dimen/fragsignup_edittxt_textSize"
+                android:maxLength="42"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+               />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:theme="@style/TextLabel"
+                >
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fragSignup_hint2"
+                android:textColorHint="@color/ls_hintcolor"
+                android:textColor="@color/White_ls"
+                android:textSize="@dimen/fragsignup_edittxt_textSize"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:maxLength="42" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:theme="@style/TextLabel"
+                >
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fragSignup_hint3"
+                android:textColorHint="@color/ls_hintcolor"
+                android:textColor="@color/White_ls"
+                android:textSize="@dimen/fragsignup_edittxt_textSize"
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:theme="@style/TextLabel"
+                >
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fragSignup_hint4"
+                android:textColorHint="@color/ls_hintcolor"
+                android:textColor="@color/White_ls"
+                android:password="true"
+                android:selectAllOnFocus="true"
+                android:textSize="@dimen/fragsignup_edittxt_textSize"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:digits="_,-,0123456789,QWERTYUIOPASDFGHJKLZXCVBNM,qwertyuiopasdfghjklzxcvbnm,!@#$%^*~`+=."
+                android:maxLength="20"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- ll2-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragSignup_hint5"
+                    android:textColor="@color/White_ls"
+                    android:textSize="@dimen/fragsignup_ll2_checkbox_textSize" />
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fragsignup_ll2_checkbox_textview_layout_marginLeft"
+                    android:text="@string/terms_and_conditions"
+                    android:textSize="@dimen/fragsignup_ll2_checkbox_textview_textsize"
+                    android:clickable="true"
+
+                    android:onClick="onClick"
+                    android:textColor="@color/White_ls" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragSignup_Button"
+                android:textSize="@dimen/fragsignup_button_textsize"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="40dp"
+                android:textColor="@color/White_ls"
+                android:background="@drawable/buttonvorner" />
+
+
+            <!--android:layout_marginBottom="@dimen/fragsignup_button_layout_marginBottom"-->
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+</RelativeLayout>

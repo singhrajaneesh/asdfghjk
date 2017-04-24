@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_pc"
+    android:layout_margin="@dimen/fragcompanyinfo_ll1_layout_marginTop"
+    tools:context="com.ekant.justbiz.ActivityEditProfile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- ll1-->
+        <LinearLayout
+            android:id="@+id/detaillayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/fragcompanyinfo_ll1_layout_marginTop"
+            android:layout_marginRight="@dimen/fragcompanyinfo_ll1_layout_marginRight"
+            android:layout_marginBottom="180dp"
+            android:layout_marginLeft="@dimen/fragcompanyinfo_ll1_layout_marginLeft">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/companyname10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:hint="@string/FragCompanyInfo_edittext_hint"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:fontFamily="sans-serif"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+
+                />
+
+                <!--android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"-->
+</android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/static_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                />
+
+            <Spinner
+                android:id="@+id/dynamic_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/address33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragCompanyInfo_edittext2_hint"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionNext"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/address34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+
+</android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragCompanyInfo_edittext3_hint"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:fontFamily="sans-serif"
+                android:maxLength="60"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+</android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/pincode12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragCompanyInfo_edittext4_hint"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:maxLength="6"
+                android:fontFamily="sans-serif"
+                android:inputType="number"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragCompanyInfo_edittext5_hint"
+                android:maxLength="35"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+</android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragCompanyInfo_edittext6_hint"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+</android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/website12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragCompanyInfo_edittext7_hint"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+</android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/phone222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragCompanyInfo_edittext8_hint"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+</android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/fax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragCompanyInfo_edittext9_hint"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+                android:maxLength="15"
+
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+</android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_textSize_layout_marginTop"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/FragCompanyInfo_edittext10_hint"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+
+                android:textColorHint="@color/pc_editprofile_hint_color"
+                android:textColor="@color/Black_pc"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+</android.support.design.widget.TextInputLayout>
+            <EditText
+                android:id="@+id/edit_aboutcompany"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="8"
+                android:minLines="8"
+                android:gravity="top|left"
+                android:textColor="@color/Black_pc"
+                android:maxLines="50"
+                android:background="@drawable/edittextbackground"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/fragpersonalinfo"
+                android:layout_marginTop="@dimen/fragcompanyinfo_edittext_layout_marginTop"
+                android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+                android:scrollbars="vertical"/>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragcompanyinfo_button_name"
+                android:textSize="16dp"
+                android:textColor="@color/White_pc"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="@dimen/fragcompanyinfo_button_layout_marginTop"
+                android:layout_marginBottom="@dimen/fragcompanyinfo_button_layout_marginTop"
+                android:background="@drawable/buttonvorner"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+</RelativeLayout>

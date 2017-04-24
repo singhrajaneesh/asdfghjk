@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id= "@+id/dialog_choice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_RelativeLayout_layout_height"
+        android:gravity="center_horizontal"
+        >
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id= "@+id/dialog_choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dialog_LinearLayout_layout_height"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageView
+                android:id= "@+id/galary"
+                android:layout_width="@dimen/dialog_ImageView_layout_width"
+                android:layout_height="@dimen/dialog_ImageView_layout_height"
+                android:src="@drawable/icogallery"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_TextView_layout_marginTop"
+                android:text="@string/dialog_textview"/>
+            </LinearLayout>
+
+    <LinearLayout
+        android:id= "@+id/dialog_choice2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_LinearLayout2_layout_height"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dialog_LinearLayout2_layout_marginLeft"
+        android:layout_toRightOf="@+id/dialog_choice1"
+        android:orientation="vertical">
+        <ImageView
+            android:id= "@+id/camera"
+            android:layout_width="@dimen/dialog_ImageView2_layout_width"
+            android:layout_height="@dimen/dialog_ImageView2_layout_height"
+            android:src="@drawable/icocamera"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_textview_layout_marginTop"
+            android:text="@string/dialog_textview2"/>
+
+    </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:id= "@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_Button_layout_height"
+        android:layout_below="@+id/dialog_choice"
+        android:layout_marginLeft="@dimen/dialog_Button_layout_marginLeft"
+        android:layout_marginRight="@dimen/dialog_Button_layout_marginRight"
+        android:layout_marginBottom="@dimen/dialog_Button_layout_marginBottom"
+        android:textSize="@dimen/dialog_Button_textsize"
+        android:text= "@string/dialog_button"
+        android:textColor="@color/White_ls"
+        android:background="@drawable/buttonvorner"/>
+
+</RelativeLayout>

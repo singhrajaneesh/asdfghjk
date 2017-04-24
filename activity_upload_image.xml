@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_pc"
+    tools:context="com.ekant.justbiz.ActivityUpLoadImage">
+
+
+    <LinearLayout
+        android:id="@+id/bannerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activityupLoadimage_scrollview_layout_marginTop"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/activityupLoadimage_scrollview_ll1_layout_marginTop"
+                android:layout_marginLeft="@dimen/activityupLoadimage_scrollview_ll1_layout_marginLeft"
+                android:layout_marginBottom="@dimen/activityupLoadimage_scrollview_ll1_layout_marginBottom"
+                android:layout_marginRight="@dimen/activityupLoadimage_scrollview_ll1_layout_marginRight"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activityupLoadimage_scrollview_rl_layout_marginTop">
+
+                    <TextView
+                        android:id="@+id/uploadheadingheading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Upload_Image"
+                        android:textSize="@dimen/fraglogin_rl1_textview_textSize"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/Black_pc"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/fraglogin_rl1_imageview_layout_width"
+                        android:layout_height="@dimen/fraglogin_rl1_imageview_layout_height"
+                        android:id="@+id/image"
+                        android:src="@drawable/upload_image"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/activityupLoadimage_scrollview_ll_layout_marginTop"
+                    android:layout_marginBottom="@dimen/activityupLoadimage_scrollview_ll_layout_marginBottom"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/editbanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uploadimage_text"
+                        android:textSize="17dp"
+                        android:textColor="@color/Black_pc"
+                        android:fontFamily="sans-serif"
+
+                        />
+
+
+                    <!--android:textSize="@dimen/activityupLoadimage_scrollview_textview_textSize"-->
+
+                    <ImageView
+                        android:id = "@+id/banner_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activityupLoadimage_scrollview_imageview_layout_height"
+                        android:src="@drawable/banner1"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="@dimen/activityupLoadimage_scrollview_imageview_layout_marginTop"
+                        android:onClick="selectBanner"/>
+
+                    <TextView
+                        android:id="@+id/editlogo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uploadimage_TextView"
+                        android:textSize="17dp"
+                        android:textColor="@color/Black_pc"
+                        android:layout_marginTop="@dimen/activityupLoadimage_scrollview_textview_layout_marginTop"
+                        />
+
+
+                    <ImageView
+                        android:id = "@+id/logo_image"
+                        android:layout_width="@dimen/activityupLoadimage_scrollview_imageview1_layout_width"
+                        android:layout_height="@dimen/activityupLoadimage_scrollview_imageview1_layout_height"
+                        android:src="@drawable/contact"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/activityupLoadimage_scrollview_imageview1_layout_marginTop"
+                        android:onClick="selectIcon"/>
+
+                    <Button
+                        android:id="@+id/upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uploadimage_Button"
+                        android:textColor="@color/White_pc"
+                        android:layout_marginTop="@dimen/activityupLoadimage_scrollview_button_layout_marginTop"
+                        android:onClick="updatephotos"
+                        android:textSize="@dimen/changepassword_button_textsize"
+                        android:background="@drawable/buttonvorner"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+</RelativeLayout>

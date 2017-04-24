@@ -1,0 +1,94 @@
+<com.ekant.justbiz.ModSwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:clickToClose="true">
+
+    <RelativeLayout
+        android:tag="Bottom1"
+        android:background="@drawable/red"
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="wrap_content"
+        android:weightSum="1"
+        android:layout_height="@dimen/adaptersavetags_rl_layoutheight">
+        <ImageView
+            android:id="@+id/trash2"
+            android:src="@drawable/ico_messages1"
+            android:layout_width="@dimen/adaptersavetags_imageview_layout_width"
+            android:background="@color/dash_adaptersavetag_imageviewcolor"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/adaptersavetags_imageview_paddingLeft"
+            android:paddingRight="@dimen/adaptersavetags_imageview_paddingRight"
+            android:onClick="sendClick"
+            android:layout_height="@dimen/adaptersavetags_imageview_layout_height" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:tag="Bottom4"
+        android:id="@+id/bottom_wrapper_2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/adaptersavetags_LinearLayout_layout_height">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/magnifier2"-->
+            <!--android:src="@drawable/ico_edit"-->
+            <!--android:layout_width="@dimen/adaptersavetags_LinearLayout_imageview_layout_width"-->
+            <!--android:background="@color/dash_adaptersavetags"-->
+            <!--android:paddingLeft="@dimen/adaptersavetags_LinearLayout_imageview_paddingLeft"-->
+            <!--android:paddingRight="@dimen/adaptersavetags_LinearLayout_imageview_paddingRight"-->
+            <!--android:layout_height="@dimen/adaptersavetags_LinearLayout_imageview_layout_height" />-->
+
+        <ImageView
+            android:id="@+id/trash"
+            android:src="@drawable/ico_delete"
+            android:layout_width="@dimen/adaptersavetags_LinearLayout_imageview2_layout_width"
+            android:background="@color/dash_adaptersavetags2"
+            android:paddingLeft="@dimen/adaptersavetags_LinearLayout_imageview2_paddingLeft"
+            android:paddingRight="@dimen/adaptersavetags_LinearLayout_imageview2_paddingRight"
+            android:layout_height="@dimen/adaptersavetags_LinearLayout_imageview2_layout_height"
+            android:onClick="deleteclick"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id= "@+id/vertical1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/adaptersavetags_LinearLayout2_layout_height"
+        android:orientation="vertical">
+        <TextView
+            android:id = "@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/adaptersavegivestags_textview_layout_marginTop"
+            android:layout_marginLeft="@dimen/adaptersavegivestags_textview_layout_marginLeft"
+            android:textColor="@color/dash_adapertsavegivetags3"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id = "@+id/category"
+            android:textSize="@dimen/adaptersavegivestags_textview_textsize"
+            android:layout_marginLeft="@dimen/adaptersavegivestags_textview_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:textColor="@color/Black_Dash"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id = "@+id/subcategory"
+            android:textSize="@dimen/adaptersavegivestags_textview_textsize"
+            android:layout_marginLeft="@dimen/adaptersavegivestags_textview_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:textColor="@color/dash_adapertsavegivetags4"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id = "@+id/vertical"
+            android:textSize="@dimen/adaptersavegivestags_textview_textsize"
+            android:layout_marginLeft="@dimen/adaptersavegivestags_textview_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:textColor="@color/dash_adapertsavegivetags5"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            />
+</LinearLayout>
+    </com.ekant.justbiz.ModSwipeLayout>

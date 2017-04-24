@@ -1,0 +1,74 @@
+<com.ekant.justbiz.ModSwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="10dp"
+    app:clickToClose="true">
+    <LinearLayout
+        android:tag="Bottom4"
+        android:id="@+id/bottom_wrapper_2s"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/adaptersavetags_LinearLayout_layout_height">
+
+        <ImageView
+            android:id="@+id/trashs"
+            android:src="@drawable/ico_delete"
+            android:layout_width="@dimen/adaptersavetags_LinearLayout_imageview2_layout_width"
+            android:background="@color/dash_adaptersavetags2"
+            android:paddingLeft="@dimen/adaptersavetags_LinearLayout_imageview2_paddingLeft"
+            android:paddingRight="@dimen/adaptersavetags_LinearLayout_imageview2_paddingRight"
+            android:layout_height="@dimen/adaptersavetags_LinearLayout_imageview2_layout_height"
+            android:onClick="givedeleteclick"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id= "@+id/vertical1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/adaptersavetags_LinearLayout2_layout_height"
+        android:orientation="vertical">
+
+        <TextView
+            android:id = "@+id/names"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginTop"
+            android:layout_marginLeft="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginLeft"
+            android:textColor="@color/dash_adapertsavegivetags3"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id = "@+id/categorys"
+            android:textSize="18dp"
+            android:layout_marginLeft="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:textColor="@color/clickimagechangecolor"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+
+            />
+        <TextView
+            android:id = "@+id/subcategorsy"
+            android:textSize="16dp"
+            android:layout_marginLeft="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:maxLines="2"
+            android:textColor="@color/dash_adapertsavegivetags4"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            />
+        <TextView
+            android:id = "@+id/verticals"
+            android:textSize="14dp"
+            android:layout_marginLeft="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginLeft"
+            android:layout_width="match_parent"
+            android:maxLines="2"
+            android:textColor="#939393"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/adaptersavetags_LinearLayout2_Textview_layout_marginBottom"
+            android:layout_marginTop="2dp"
+
+            />
+    </LinearLayout>
+</com.ekant.justbiz.ModSwipeLayout>
