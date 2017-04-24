@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekant.justbiz.ActivityResendEmail"
+    android:background="@color/ls_background">
+
+    <!-- ll1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activityforgotemail_ll1_layout_marginLeft"
+        android:layout_marginRight="@dimen/activityforgotemail_ll1_layout_marginRight">
+
+        <!-- rl1-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activityforgotemail_ll1_rl1_layout_marginTop">
+            <TextView
+                android:id="@+id/alert2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Email_Verification"
+                android:textSize="@dimen/fragforgotpassword_ll1_rl1_textview_textSize"
+                android:textColor="@color/White_ls"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="@dimen/fragforgotpassword_ll1_rl1_imageview_layout_width"
+                android:layout_height="@dimen/fragforgotpassword_ll1_rl1_imageview_layout_height"
+                android:id="@+id/image"
+                android:src="@drawable/email_verification"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activiryresendemail_textview_textSize"
+            android:textColor="@color/Black_ls"
+            android:gravity="center"
+            android:text="@string/activity_resend_text_message"
+            android:layout_marginTop="@dimen/activiryresendemail_textview_layout_marginTop"
+          />
+        <Button
+            android:id="@+id/resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ActivityResendEmail_button_messageResendLingk"
+            android:textSize="@dimen/activiryresendemail_button1_textSize"
+            android:layout_marginTop="@dimen/activiryresendemail_button1_layout_marginTop"
+            android:textColor="@color/White_ls"
+            android:clickable="true"
+            android:onClick="resend"
+            android:background="@drawable/buttonvorner" />
+        <Button
+            android:id="@+id/backtologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ActivityResendEmail_button_message"
+            android:textSize="@dimen/activiryresendemail_button2_textSize"
+            android:textColor="@color/White_ls"
+            android:layout_marginTop="@dimen/activiryresendemail_button2_layout_marginTop"
+            android:clickable="true"
+            android:onClick="backtologin"
+            android:background="@drawable/buttonvorner"
+             />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+</RelativeLayout>
+

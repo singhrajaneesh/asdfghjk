@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ls_background"
+    tools:context="com.ekant.justbiz.Help">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- ll1-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/fraglogin_ll1_layout_marginLeft"
+            android:layout_marginRight="@dimen/fraglogin_ll1_layout_marginRight"
+            >
+            <!-- rl1-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fraglogin_rl1_layout_marginTop">
+                <TextView
+                    android:id="@+id/textviewmsglogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help and Support"
+                    android:textSize="@dimen/fraglogin_rl1_textview_textSize"
+                    android:textColor="@color/White_ls"
+                    android:layout_centerVertical="true" />
+                <ImageView
+                    android:layout_width="@dimen/fraglogin_rl1_imageview_layout_width"
+                    android:layout_height="@dimen/fraglogin_rl1_imageview_layout_height"
+                    android:id="@+id/image"
+                    android:src="@drawable/email_verification"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/helpfirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/blackcolor"
+            android:textSize="18dp"
+            android:text="First Name  " />
+
+        <TextView
+            android:id="@+id/helpfn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackcolor"
+            android:textSize="18dp"
+            android:text="NA"
+            android:layout_marginLeft="20dp"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/helplastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/blackcolor"
+            android:textSize="18dp"
+            android:text="Last Name  " />
+
+        <TextView
+            android:id="@+id/helpln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackcolor"
+            android:textSize="18dp"
+            android:text="NA"
+            android:layout_marginLeft="20dp"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastname"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/helpemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/blackcolor"
+            android:textSize="18dp"
+            android:text="Email          " />
+
+        <TextView
+            android:id="@+id/helpemail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackcolor"
+            android:textSize="18dp"
+            android:text="NA"
+            android:layout_marginLeft="20dp"
+
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/helpfeedback"
+        android:layout_below="@+id/email"
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="8"
+        android:minLines="8"
+        android:gravity="top|left"
+        android:textColor="@color/Black_pc"
+        android:maxLines="50"
+        android:background="@drawable/edittextbackground"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Please enter your query here"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/fragcompanyinfo_edittext_textSize"
+        android:scrollbars="vertical"/>
+
+            <Button
+                android:id="@+id/helpsave"
+                android:layout_below="@+id/helpfeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:clickable="true"
+                android:onClick="save"
+                android:textSize="@dimen/fraglogin_button_textsize"
+                android:textColor="@color/White_ls"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonvorner"/>
+            <!--android:layout_marginTop="@dimen/fraglogin_button_layout_marginTop"-->
+</RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tileimage"
+    tools:context="com.example.ekant.justbiz.Guide">
+
+
+
+    <!-- Linearlayout use in dimensation folder as ll1-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guide_ll1_layout_marginTop"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guide_Screen_header_message"
+            android:textSize="@dimen/guide_ll1_layout_textSize"
+            android:textStyle="bold"
+            android:textColor="@color/White_ls" />
+    </LinearLayout>
+
+    <!-- Linearlayout use in dimensation folder as ll2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/guide_ll2_layout_rl_layout_marginTop"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="@dimen/guide_ll2_layout_rl_layout_button_layout_width"
+                android:layout_height="@dimen/guide_ll2_layout_rl_layout_button_layout_height"
+                android:textSize="@dimen/guide_ll2_layout_rl_layout_button_textSize"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:textColor="@color/White_ls"
+                android:clickable="true"
+                android:background="@drawable/videos" />
+
+            <TextView
+                android:id="@+id/videos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guide_message_video"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/guide_ll2_layout_rl_layout_textview_textSize"
+                android:textColor="@color/White_ls"
+                android:textStyle="bold"
+                android:layout_below="@id/button2"
+                android:clickable="true"
+                android:onClick="videos" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/guide_ll2_layout_rl_layout_marginTop">
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="@dimen/guide_ll2_layout_rl_layout_button_layout_width"
+                android:layout_height="@dimen/guide_ll2_layout_rl_layout_button_layout_height"
+                android:textSize="@dimen/guide_ll2_layout_rl_layout_button_textSize"
+                android:layout_below="@+id/relativelayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:textColor="@color/White_ls"
+                android:background="@drawable/slideshow" />
+            <TextView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guide_message_image"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/guide_ll2_layout_rl_layout_textview_textSize"
+                android:textColor="@color/White_ls"
+                android:textStyle="bold"
+                android:layout_below="@id/button3"
+                android:clickable="true"
+                android:onClick="image" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

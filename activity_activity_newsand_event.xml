@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/White_News">
+
+    <RelativeLayout
+        android:id="@+id/rl55"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/ActivityNewsandEvent_RelativeLayout_layout_marginLeft"
+        android:layout_marginRight="@dimen/ActivityNewsandEvent_RelativeLayout_layout_marginRight"
+        android:layout_marginTop="@dimen/ActivityNewsandEvent_RelativeLayout_layout_marginTop"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textviewjb"
+        android:text="@string/ActivityNewsandEvent_textview"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/Black_News"
+        />
+
+
+    <ImageView
+        android:layout_width="@dimen/ActivityNewsandEvent_Imageview_layout_width"
+        android:layout_height="@dimen/ActivityNewsandEvent_Imageview_layout_height"
+        android:src="@drawable/icon_newsright"
+        android:layout_toRightOf="@+id/textviewjb"
+        android:layout_marginLeft="@dimen/ActivityNewsandEvent_Imageview_layout_marginLeft"
+        android:layout_alignParentRight="true"
+        />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl55"
+        android:dividerHeight="@dimen/ActivityNewsandEvent_Listview_dividerHeight"
+        android:divider="@color/news_dividercolor"
+        android:layoutAnimation="@anim/listviewanimation2list_layout_controller"
+        ></ListView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekant.justbiz.ActivitySaveTags">
+
+    <!-- rl2-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activitysavetags_rl2_layout_height"
+        android:background="@color/gb_background">
+        <ImageView
+            android:id = "@+id/categoryimage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activitysavetags_rl2_imageview_layout_height"
+            android:scaleType="fitXY"
+            android:background="@drawable/givegetplaceholder"
+            />
+        <TextView
+            android:id="@+id/selectedcategory"
+            android:layout_width="wrap_content"
+            android:background="@drawable/text_background1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activitysavetags_rl2_textview_layout_margin"
+            android:gravity="center_vertical"
+            android:textColor="@color/Black_gb"
+            android:layout_centerInParent="true"
+            android:textSize="22dp"
+            />
+    </RelativeLayout>
+
+    <!-- rl3-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id = "@+id/subcategory"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minHeight="@dimen/activitysavetags_rl3_minHeight"-->
+        <!--android:background="@color/gb_choose_tags__bakground"-->
+        <!--android:layout_below="@+id/category">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/savetagstitle1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:text="@string/choosesub"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="@dimen/activitysavetags_rl3_textview_paddingLeft"-->
+            <!--android:paddingRight="@dimen/activitysavetags_rl3_textview_paddingRight"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:textColor="@color/Black_gb"-->
+            <!--android:textSize="@dimen/activitysavetags_rl3_textview_textsize"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!-- rl4-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/activitysavetags_rl3_minHeight"
+        android:background="@color/gb_savetags_bakground"
+        android:layout_below="@+id/category">
+
+        <TextView
+            android:id="@+id/savetagstagtext"
+            android:layout_width="match_parent"
+            android:text="@string/choosesub"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activitysavetags_rl3_textview_paddingLeft"
+            android:paddingRight="@dimen/activitysavetags_rl3_textview_paddingRight"
+            android:layout_centerVertical="true"
+            android:textColor="@color/Black_gb"
+            android:textSize="@dimen/activitysavetags_rl3_textview_textsize"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:text="@string/givechoice"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/Black_gb"
+        android:textSize="@dimen/activitysavetags_textview_textsize"
+        android:layout_margin="@dimen/activitysavetags_textview_layout_margin"
+        android:layout_below="@+id/tags"
+        />
+
+
+    <EditText
+        android:id = "@+id/verticalname"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/ActivitySaveTags"
+        android:layout_marginTop="@dimen/activitysavetags_edittext_layout_marginTop"
+        android:layout_marginLeft="@dimen/activitysavetags_edittext_layout_marginLeft"
+        android:layout_marginRight="@dimen/activitysavetags_edittext_layout_marginRight"
+        android:layout_below="@+id/tags"
+        android:textSize="@dimen/activitysavetags_edittext_layout_textSize"
+        android:inputType="textCapWords"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:id = "@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verticalname"
+        android:textSize="@dimen/activitysavetags_button_layout_textSize"
+        android:textColor="@color/White_gb"
+        android:layout_marginTop="@dimen/activitysavetags_button_layout_marginTop"
+        android:text="@string/activity_save_tag_button_name"
+        android:layout_margin="@dimen/activitysavetags_button_layout_margin"
+        android:background="@drawable/buttonvorner"
+        android:onClick="savevertical"
+
+        />
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressBarLogin321"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:indeterminate="false"-->
+            <!--android:max="48"-->
+            <!--android:layout_marginTop="150dp"-->
+            <!--android:minHeight="48dp"-->
+            <!--android:maxHeight="48dp"-->
+            <!--android:minWidth="48dp"-->
+            <!--android:progress="45"-->
+            <!--android:visibility="invisible"-->
+            <!-->-->
+
+        <!--</ProgressBar>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/progressbar"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

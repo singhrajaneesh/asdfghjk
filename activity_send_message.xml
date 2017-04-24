@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_chat"
+    tools:context="com.ekant.justbiz.ActivitySendMessage">
+
+    <!-- ll1-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft= "@dimen/activitysendmessage_ll1_layout_marginLeft"
+        android:layout_marginRight="@dimen/activitysendmessage_ll1_layout_marginRight"
+        >
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="match_parent"
+            android:background="@color/White_chat"
+            android:text="@string/activitysendmessage_textview"
+            android:layout_height="@dimen/activitysendmessage_ll1_textview_layout_height"
+            android:gravity="center_vertical"
+            android:textColor="@color/chat_background3"
+            android:textStyle="bold"
+            android:textSize="@dimen/activitysendmessage_ll1_textview_textSize"
+            />
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:background="@color/White_chat"
+            android:text="@string/activitysendmessage_textview"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/chat_cantact_Second"
+            android:textSize="@dimen/activitysendmessage_ll1_textview2_textSize"
+            />
+        <TextView
+            android:id="@+id/subcategory"
+            android:layout_width="match_parent"
+            android:background="@color/White_chat"
+            android:text="@string/activitysendmessage_textview"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/chat_sendmseeage_text"
+            android:textSize="@dimen/activitysendmessage_ll1_textview3_textSize"
+            />
+        <TextView
+            android:id="@+id/vertical"
+            android:layout_width="match_parent"
+            android:background="@color/White_chat"
+            android:text="@string/activitysendmessage_textview"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/chat_sendmseeage_text2"
+            android:textSize="@dimen/activitysendmessage_ll1_textview3_textSize"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:background="@color/White_chat"
+            android:text="@string/givename"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/Black_chat"
+            android:textSize="@dimen/activitysendmessage_ll1_textview4_textSize"
+            />
+        <EditText
+            android:id="@+id/edttext"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:minLines="6"
+            android:gravity="top|left"
+            android:textColor="@color/Black_chat"
+            android:maxLines="10"
+            android:background="@drawable/edittextbackground"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="18dp"
+            android:scrollbars="vertical"
+            />
+
+
+        <!--android:textSize="@dimen/activitysendmessage_ll1_edittext_textSize"-->
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activitysendmessage_Button"
+            android:textSize="@dimen/activitysendmessage_ll1_button_textSize"
+            android:textColor="@color/White_chat"
+            android:layout_marginTop="@dimen/activitysendmessage_ll1_button_layout_marginTop"
+            android:onClick="Click"
+            android:background="@drawable/buttonvorner"/>
+    </LinearLayout>
+    <include android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"/>
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

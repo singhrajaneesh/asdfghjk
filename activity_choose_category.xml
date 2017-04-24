@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/White_gb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekant.justbiz.ActivityChooseCategory">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activitychoosecategory_textview_layout_marginLeft"
+        android:text="@string/choosecategory"
+        android:layout_height="@dimen/activitychoosecategory_textview_layout_height"
+        android:gravity="center_vertical"
+        android:textColor="@color/Black_gb"
+        android:textStyle="bold"
+        android:textSize="@dimen/activitychoosecategory_textview_textsize"
+        />
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title"
+        android:includeInGlobalSearch="true"
+        android:queryAfterZeroResults="true"
+        android:searchMode="queryRewriteFromText"
+        android:searchSuggestIntentAction="android.provider.Contacts.SEARCH_SUGGESTION_CLICKED"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:divider="@color/listviewdividercolor_gb"
+        android:layout_below="@+id/search_view"
+        android:background="@drawable/tileimage"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="@dimen/activitychoosecategory_listview_dividerHeight"
+
+        />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:divider="@color/listviewdividercolor_gb"
+        android:layout_below="@+id/search_view"
+        android:background="@drawable/tileimage"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="@dimen/activitychoosecategory_listview_dividerHeight"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+
+</RelativeLayout>

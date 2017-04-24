@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gb_background_sub"
+    >
+    <!-- rl1-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activitychoosesubcatories_rl1_layout_height"
+        android:background="@color/gb_background">
+        <ImageView
+            android:id = "@+id/categoryimage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activitychoosesubcatories_rl1_imageview_layout_height"
+            android:scaleType="fitXY"
+            android:background="@drawable/givegetplaceholder"
+            />
+        <TextView
+            android:id="@+id/selectedcategory"
+            android:layout_width="wrap_content"
+            android:background="@drawable/text_background1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activitychoosesubcatories_rl1_textview_layout_margin"
+            android:gravity="center_vertical"
+            android:textColor="@color/Black_gb"
+            android:layout_centerInParent="true"
+            android:textSize="22dp"
+            />
+    </RelativeLayout>
+
+    <!-- rl2-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activitychoosesubcatories_rl2_layout_height"
+        android:background="@color/White_gb"
+        android:layout_below="@+id/category">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:text="@string/choosesub"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activitychoosesubcatories_rl2_textview_paddingLeft"
+            android:layout_centerVertical="true"
+            android:textColor="@color/Black_gb"
+            android:textSize="@dimen/activitychoosesubcatories_rl2_textview_textSize"
+            />
+
+        <!--android:textSize="@dimen/activitychoosesubcatories_rl2_textview_textSize"-->
+
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activitychoosesubcatories_scrollview_layout_marginBottom"
+        android:background="@color/White_gb"
+        android:layout_below="@+id/subcategory">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- 8/2/2016 This is responsible for tag show in display-->
+            <com.ekant.justbiz.ModTagLayout
+                android:id="@+id/tagLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White_gb"
+                android:scrollbars="vertical"
+                android:fadingEdge="vertical"
+                android:layout_marginLeft="5dp"
+                xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id ="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/activitychoosesubcatories_textview_layout_height"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activitychoosesubcategory_textview_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/activitychoosesubcatories_textview_layout_marginLeft"
+        android:layout_marginBottom="@dimen/activitychoosesubcatories_textview_layout_marginBottom"
+        android:layout_marginRight="@dimen/activitychoosesubcatories_textview_layout_marginRight"
+        android:gravity="center"
+        android:textSize="@dimen/activitychoosesubcatories_textview_textSize"
+        android:textColor="@color/White_gb"
+        android:drawableRight="@drawable/proceed"
+        />
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+
+</RelativeLayout>

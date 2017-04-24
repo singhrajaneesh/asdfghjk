@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash" />
+    <TextView
+        android:id="@+id/appmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/Splash_Screen_message"
+        android:layout_marginBottom="@dimen/splash_layout_marginBottom"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/White_ls"
+        android:textSize="@dimen/splash_screen_textSize"
+        android:textAlignment="center"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/White_ls"
+        android:textSize="@dimen/splash_screen_textSizeVersion"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:layout_marginBottom="20dp"
+        />
+
+
+<RelativeLayout
+    android:layout_marginBottom="45dp"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/progressBarsplashscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="48"
+        android:minHeight="48dp"
+        android:maxHeight="48dp"
+        android:progress="45"
+        android:visibility="invisible"
+        >
+    </ProgressBar>
+</RelativeLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+</RelativeLayout>

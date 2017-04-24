@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/ls_background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/signupclick_ll1_layout_marginLeft"
+        android:layout_marginRight="@dimen/signupclick_ll1_layout_marginRight"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/signupclick_rl1_layout_marginTop"
+            >
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registrationsuccess"
+                android:textSize="@dimen/signupclick_rl1_textview_textSize"
+                android:textColor="@color/White_ls"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="@dimen/signupclick_rl1_imageview_layout_width"
+                android:layout_height="@dimen/signupclick_rl1_imageview_layout_height"
+                android:id="@+id/image"
+                android:src="@drawable/check_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvPerson"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:text="@string/signupclicked"
+            android:textSize="@dimen/signupclick_textview_textSize"
+            android:textColor="@color/Black_ls"
+            android:layout_marginTop="@dimen/signupclick_textview_layout_marginTop"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Activity_SignUPClick"
+            android:textSize="@dimen/signupclick_button_textSize"
+            android:textColor="@color/White_ls"
+            android:layout_marginTop="@dimen/signupclick_button_layout_marginTop"
+
+            android:background="@drawable/buttonvorner"/>
+
+    </LinearLayout>
+</RelativeLayout>

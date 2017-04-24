@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_chat">
+
+    <!-- ll1-->
+    <LinearLayout
+        android:id="@+id/msglinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activitychatdescription_ll1_layout_marginBottom"
+        android:orientation="vertical"
+        android:background="@drawable/tileimagechat">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/chat_dividercolor"
+            android:dividerHeight="@dimen/activitychatdescription_ll1_listview_dividerHeight"
+            android:background="@drawable/tileimagechat"
+            android:id="@+id/listView1"
+            />
+
+    </LinearLayout>
+
+
+    <!-- rl1-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activitychatdescription_rl1_layout_height"
+        android:background="@drawable/tileimagechat"
+        android:paddingLeft="@dimen/activitychatdescription_rl1_paddingLeft"
+        android:paddingRight="@dimen/activitychatdescription_rl1_paddingRight"
+        android:paddingBottom="@dimen/activitychatdescription_rl1_paddingBottom"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/textsend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activitychatdescription_edittext_layout_height"
+            android:hint="@string/ActivityChatDescription_hint"
+            android:scrollbars = "vertical"
+            android:textSize="@dimen/activitychatdescription_edittext_textSize"
+            android:inputType="textMultiLine"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="@dimen/activitychatdescription_edittext_layout_marginRight"
+            android:background="@drawable/curve_corner_right"
+            android:layout_toLeftOf="@+id/sendmessage"
+            />
+
+        <Button
+            android:id="@+id/sendmessage"
+            android:layout_width="@dimen/activitychatdescription_button_layout_width"
+            android:layout_height="@dimen/activitychatdescription_button_layout_height"
+            android:onClick="send"
+            android:textColor="@color/White_chat"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/send_icon"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

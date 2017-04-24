@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ls_background"
+    tools:context="com.example.ekant.justbiz.forgotEmail">
+
+    <!-- ll1-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activityforgotemail_ll1_layout_marginLeft"
+        android:layout_marginRight="@dimen/activityforgotemail_ll1_layout_marginRight">
+
+        <!-- rl1-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activityforgotemail_ll1_rl1_layout_marginTop">
+            <TextView
+                android:id="@+id/alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Send_Email"
+                android:textSize="@dimen/fragforgotpassword_ll1_rl1_textview_textSize"
+                android:textColor="@color/White_ls"
+                android:textStyle="bold"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="@dimen/fragforgotpassword_ll1_rl1_imageview_layout_width"
+                android:layout_height="@dimen/fragforgotpassword_ll1_rl1_imageview_layout_height"
+                android:id="@+id/image"
+                android:src="@drawable/email_sent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:text="@string/activitforgtoemail_textname"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/fragforgotpassword_textview_layout_marginTop"
+            android:textColor="@color/Black_ls"
+            android:gravity="center"
+            android:textSize="@dimen/fragforgotpassword_textview_textSize"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ActivityForgotEmail_button_message"
+            android:layout_marginTop="@dimen/fragforgotemail_button_layout_marginTop"
+            android:textSize="@dimen/fragforgotemail_button_textSize"
+            android:textColor="@color/White_ls"
+            android:background="@drawable/buttonvorner"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

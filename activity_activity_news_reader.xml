@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekant.justbiz.ActivityNewsReader">
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/newshaderposter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ActivityNewsandEvent_ImageView_layout_height"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+          <TextView
+            android:id="@+id/textviewheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newshaderposter"
+            android:textStyle="bold"
+            android:textSize="@dimen/ActivityNewsandEvent_TextView_textSize"
+            android:layout_marginTop="@dimen/ActivityNewsandEvent_TextView_layout_marginTop"
+            android:layout_marginLeft="@dimen/ActivityNewsandEvent_TextView_layout_marginLeft"
+            android:layout_marginRight="@dimen/ActivityNewsandEvent_TextView_layout_marginRight"
+            android:textColor="@color/News_background3"
+            android:gravity="left" />
+        <TextView
+            android:id="@+id/textviewdescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textviewheading"
+            android:layout_marginTop="@dimen/ActivityNewsandEvent_TextView2_layout_marginTop"
+            android:layout_marginLeft="@dimen/ActivityNewsandEvent_TextView2_layout_marginLeft"
+            android:layout_marginRight="@dimen/ActivityNewsandEvent_TextView2_layout_marginRight"
+            android:linksClickable="true"
+            android:textColor="@color/Black_News"
+            android:textSize="@dimen/ActivityNewsandEvent_TextView2_textSize"
+            android:layout_gravity="center_vertical|right"
+            android:autoLink="web|phone|map|email|all"
+            android:gravity="left"
+            />
+          <RelativeLayout
+              android:id="@+id/rl56"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:layout_below="@id/textviewdescription"
+              android:layout_marginTop="@dimen/ActivityNewsandEvent_Relativelayout_layout_marginTop"
+              android:background="@color/News_background3"
+              android:layout_alignParentBottom="true"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:id="@+id/followus"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/ActivityNewsReader"
+                  android:textColor="@color/White_News"
+                  android:layout_centerInParent="true"
+                  android:layout_alignParentBottom="true"
+                  />
+              <ImageView
+                  android:id="@+id/facebook"
+                  android:layout_width="@dimen/ActivityNewsandEvent_ImageView2_layout_width"
+                  android:layout_height="@dimen/ActivityNewsandEvent_ImageView2_layout_height"
+                  android:text="@string/activitynewsreader_imageviewtext"
+                  android:src="@drawable/facebook"
+                  android:layout_centerInParent="true"
+                  android:clickable="true"
+                  android:onClick="facebook12"
+                  android:layout_marginBottom="@dimen/ActivityNewsandEvent_ImageView3_paddingLeft_layout_marginBottom"
+                  android:layout_marginTop="@dimen/ActivityNewsandEvent_ImageView3_layout_marginTop2"
+                  android:paddingLeft="@dimen/ActivityNewsandEvent_ImageView3_paddingLeft2"
+                  android:layout_alignParentBottom="true"
+                  android:layout_toRightOf="@id/followus">
+              </ImageView>
+
+              <ImageView
+                  android:id="@+id/twitter"
+                  android:layout_width="@dimen/ActivityNewsandEvent_ImageView2_layout_width"
+                  android:layout_height="@dimen/ActivityNewsandEvent_ImageView2_layout_height"
+                  android:src="@drawable/twitter"
+                  android:clickable="true"
+                  android:onClick="twitter"
+                  android:layout_marginTop="@dimen/ActivityNewsandEvent_ImageView4_layout_marginTop"
+                  android:layout_centerInParent="true"
+                  android:paddingLeft="@dimen/ActivityNewsandEvent_ImageView4_paddingLeft"
+                  android:layout_alignParentBottom="true"
+                  android:layout_toRightOf="@id/facebook" />
+              <ImageView
+                  android:id="@+id/instagram"
+                  android:layout_width="@dimen/ActivityNewsandEvent_ImageView2_layout_width"
+                  android:layout_height="@dimen/ActivityNewsandEvent_ImageView2_layout_height"
+                  android:src="@drawable/instagram"
+                  android:clickable="true"
+                  android:onClick="instagram"
+                  android:layout_marginTop="@dimen/ActivityNewsandEvent_ImageView5_layout_marginTop"
+                  android:layout_centerInParent="true"
+                  android:paddingLeft="@dimen/ActivityNewsandEvent_ImageView5_paddingLeft"
+                  android:layout_alignParentBottom="true"
+                  android:layout_toRightOf="@id/twitter" />
+
+          </RelativeLayout>
+
+
+
+
+         </RelativeLayout>
+</ScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+</RelativeLayout>

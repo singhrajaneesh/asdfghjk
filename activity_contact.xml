@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White_chat"
+    android:orientation="vertical"
+    tools:context="com.ekant.justbiz.ActivityContact">
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_contact_header"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/Black_chat"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="@dimen/adaptercategories_imageview_layout_marginLeft"
+
+
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<TextView
+    android:id="@+id/contactalertmessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16dp"
+    android:text="@string/activity_contact_noReply1"
+    android:textColor="@color/dash_adapertsavegivetags4"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_gravity="center_vertical"
+    android:visibility="invisible"
+    >
+
+</TextView>
+</RelativeLayout>
+
+
+
+    />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White_chat"
+        android:id="@+id/listView"
+        android:divider="@color/chat_dividercolor"
+        android:layout_marginTop="48dp"
+        android:dividerHeight="@dimen/activity_contact_listview_dividerHeight"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

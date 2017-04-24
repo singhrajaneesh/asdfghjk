@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekant.justbiz.ActivitySaveAutomatic">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activitysavetags_rl2_layout_height"
+        android:background="@color/gb_background">
+        <ImageView
+            android:id = "@+id/categoryimage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activitysavetags_rl2_imageview_layout_height"
+            android:scaleType="fitXY"
+            android:background="@drawable/givegetplaceholder"
+            />
+        <TextView
+            android:id="@+id/saveautomaticselectedcategory"
+            android:layout_width="wrap_content"
+            android:background="@drawable/text_background1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activitysavetags_rl2_textview_layout_margin"
+            android:gravity="center_vertical"
+            android:textColor="@color/Black_gb"
+            android:layout_centerInParent="true"
+            android:textSize="22dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/activitysavetags_rl3_minHeight"
+        android:background="@color/gb_choose_tags__bakground"
+        android:layout_below="@+id/category">
+
+        <TextView
+            android:id="@+id/saveautomatictitle1"
+            android:layout_width="match_parent"
+            android:text="@string/choosesub"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activitysavetags_rl3_textview_paddingLeft"
+            android:paddingRight="@dimen/activitysavetags_rl3_textview_paddingRight"
+            android:layout_centerVertical="true"
+            android:textColor="@color/Black_gb"
+            android:textSize="20dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/activitysavetags_rl3_minHeight"
+        android:background="@color/gb_savetags_bakground"
+        android:layout_below="@+id/subcategory">
+
+        <TextView
+            android:id="@+id/saveautomatictagtext"
+            android:layout_width="match_parent"
+            android:text="@string/choosesub"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activitysavetags_rl3_textview_paddingLeft"
+            android:paddingRight="@dimen/activitysavetags_rl3_textview_paddingRight"
+            android:layout_centerVertical="true"
+            android:textColor="@color/Black_gb"
+            android:textSize="@dimen/activitysavetags_rl3_textview_textsize"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+
+
+</RelativeLayout>

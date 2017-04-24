@@ -1,0 +1,455 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ViewSwitcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:background="@color/White_pc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.ekant.justbiz.ModObservableScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activitymyprofile_ModObservableScrollView_layout_marginBottom"
+        android:id="@+id/scrollView"
+        tools:context="com.ekant.JustBusinesses.DashBoard">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/profilelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/companylogo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activitymyprofile_imageview12_layout_height"
+                        android:src="@drawable/banner1"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        />
+                    <ImageView android:id = "@+id/edit"
+                        android:layout_width="@dimen/activitymyprofile_imageview2_layout_width"
+                        android:layout_height="@dimen/activitymyprofile_imageview2_layout_height"
+                        android:layout_alignBottom="@+id/companylogo"
+                        android:layout_alignRight="@+id/companylogo"
+                        android:layout_margin="@dimen/activitymyprofile_imageview2_layout_margin"
+                        android:onClick="CallEditCompany"
+                        android:src="@drawable/ico_edit"
+                        android:scaleType="fitXY"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activitymyprofile_view"/>
+
+                    <ImageView
+                        android:id="@+id/profilelogo"
+                        android:layout_width="@dimen/activitymyprofile_IMAGEVIEW_layout_width"
+                        android:layout_height="@dimen/activitymyprofile_IMAGEVIEW_layout_height"
+                        android:background="@drawable/frame"
+                        android:src="@drawable/contact"
+                        android:scaleType="fitXY"
+                        android:layout_below="@id/companylogo"
+                        android:layout_marginLeft="@dimen/activitymyprofile_IMAGEVIEW_layout_marginLeft"
+                        android:layout_marginTop="@dimen/activitymyprofile_IMAGEVIEW_layout_marginTop"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:adjustViewBounds="true"
+                        android:layout_marginBottom="@dimen/activitymyprofile_IMAGEVIEW_layout_marginBottom"
+                        />
+                    <ImageView android:id = "@+id/edit1"
+                        android:layout_width="@dimen/activitymyprofile_imageview3_layout_width"
+                        android:layout_height="@dimen/activitymyprofile_imageview3_layout_height"
+                        android:layout_alignBottom="@+id/profilelogo"
+                        android:layout_alignRight="@+id/profilelogo"
+                        android:layout_margin="@dimen/activitymyprofile_imageview3_layout_margin"
+                        android:src="@drawable/editgrey"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:onClick="CallEditProfile"
+                        android:scaleType="fitXY"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/activitymyprofile_ll2_layout_marginLeft"
+                        android:layout_below="@+id/companylogo"
+                        android:layout_marginTop="@dimen/activitymyprofile_ll2_layout_marginTop"
+                        android:layout_toRightOf="@+id/profilelogo"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/companynameprofile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text= "..."
+                                android:textColor="@color/pc_savegivetags"
+
+                                android:layout_alignParentLeft="true"
+                                android:textStyle="bold"
+                                android:textSize="22dp"
+
+
+                                />
+
+
+                            <!--android:textSize="@dimen/activitymyprofile_ll2_textview_textSize"-->
+
+                            <ImageView android:id = "@+id/edit3"
+                                android:layout_width="@dimen/activitymyprofile_ll2_imageview_layout_width"
+                                android:layout_height="@dimen/activitymyprofile_ll2_imageview_layout_height"
+                                android:onClick="CallEditdetails"
+                                android:src="@drawable/editgrey"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/activitymyprofile_ll2_imageview_layout_marginRight"
+                                android:scaleType="fitXY"/>
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/companycategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text= ""
+                            android:textColor="@color/LightGray_pc"
+                            android:textSize="18dp"
+                            />
+                        <!--android:textSize="@dimen/activitymyprofile_textview_textSize"-->
+
+                        <TextView
+                            android:id="@+id/companySubcategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text= ""
+                            android:textColor="@color/LightGray_pc"
+                            android:textSize="16dp"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/White_pc"
+                    android:layout_below="@+id/subcategory">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <com.ekant.justbiz.ModTagLayout
+                            android:id="@+id/tagLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/White_pc"
+                            android:scrollbars="vertical"
+                            android:fadingEdge="vertical"
+                            android:layout_marginLeft="@dimen/activitymyprofile_taglayout_layout_marginLeft"
+                            android:layout_marginRight="@dimen/activitymyprofile_taglayout_layout_marginRight"
+                            xmlns:android="http://schemas.android.com/apk/res/android" />
+                        <ImageView
+                            android:id="@+id/addvertical"
+                            android:layout_width="@dimen/activitymyprofile_imageview_layout_width"
+                            android:layout_height="@dimen/activitymyprofile_imageview_layout_height"
+                            android:onClick="industrycomplete"
+                            android:layout_alignBottom="@+id/tagLayout"
+                            android:layout_alignRight="@+id/tagLayout"
+                            android:background="@drawable/editgrey"/>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/bottomlayout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/linearLayout1"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/about"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activitymyprofile_rl2_tv_layout_marginTop"
+                            android:textColor="@color/LightGray_pc"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:textSize="22dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/activitymyprofile_textview2_text"
+                            />
+                        <TextView
+                            android:id="@+id/aboutdesc"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/pc_graytextcolor"
+                            android:textSize="16dp"
+                            android:text="@string/activitymyprofile_textview3_text"
+                            android:layout_below="@+id/about"
+                            android:maxLength="500"
+                            />
+                    </RelativeLayout>
+
+</LinearLayout>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/givemsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activitymyprofile_rl_layout_marginTop"
+                    android:background="@color/pc_myprofile_background"
+                    android:layout_below="@+id/scrollView1">
+                    <TextView
+                        android:id="@+id/givebussiness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/Black_pc"
+                        android:layout_centerVertical="true"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:background="@color/LightGray_pc"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="@string/activitymyprofile_textview_text"/>
+                    <Button
+                        android:id="@+id/getadd"
+                        android:layout_width="@dimen/actvitymyprofile_plus_button_layout_width"
+                        android:layout_height="@dimen/actvitymyprofile_plus_button_layout_height"
+                        android:layout_alignParentRight="true"
+                        android:onClick="getcompleted"
+                        android:background="@drawable/ico_add"/>
+
+
+                </RelativeLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/givemsg"
+                    android:id="@+id/give"
+                    tools:context=".MainActivity">
+                    <ListView
+                        android:id="@+id/dynamicget12"
+                        android:dividerHeight="@dimen/actvitymyprofile_ListView_dividerheight"
+                        android:padding="@dimen/actvitymyprofile_ListView_padding"
+                        android:background="#eeeeee"
+                        android:divider="@color/White_pc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <!--android:layout_marginLeft="@dimen/actvitymyprofile_ListView_layout_marginLeft"-->
+
+                    </ListView>
+                </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/wantmsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/actvitymyprofile_RelativeLayout_layout_marginTop"
+                    android:background="@color/LightGray_pc"
+                    android:layout_below="@+id/tagLayout12">
+                    <TextView
+                        android:id="@+id/wantbussiness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/actvitymyprofile_tv_layout_marginLeft"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/Black_pc"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:background="@color/LightGray_pc"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="@string/activitymyprofile_textview1_text"/>
+                    <Button
+                        android:id="@+id/giveadd"
+                        android:layout_width="@dimen/actvitymyprofile_plus_button_layout_width"
+                        android:layout_height="@dimen/actvitymyprofile_plus_button_layout_height"
+                        android:onClick="givecomplete"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/ico_add"
+                        />
+
+                </RelativeLayout>
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/givemsg"
+                    android:id="@+id/give"
+                    tools:context=".MainActivity">
+                    <ListView
+                        android:id="@+id/myprofiledynamicgive"
+                        android:dividerHeight="1dp"
+                        android:divider="@color/pc_myprofile_listviewHeader"
+                        android:padding="@dimen/activitymyprofile_listview_padding"
+                        android:layout_marginLeft="@dimen/activitymyprofile_listview_layout_marginLeft"
+                        android:layout_marginRight="@dimen/activitymyprofile_listview_layout_marginRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                    </ListView>
+                </LinearLayout>
+
+
+
+
+                <!--android:textSize="@dimen/activitymyprofile_rl2_tv2_textSize"-->
+
+
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bottomlayout"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:id="@+id/btnLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/pc_savegivetags">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </com.ekant.justbiz.ModObservableScrollView>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/imagelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/pc_myprofile_background3"
+        android:onClick="industrycompleted"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/step5"
+            android:id="@+id/guideimage1"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/givelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/pc_myprofile_background3"
+        android:onClick="givecomplete"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/step4"
+            android:id="@+id/guideimage"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/getlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/pc_myprofile_background3"
+        android:onClick="getcompleted"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/step3"
+            android:id="@+id/guideimage"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/industrylayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/pc_myprofile_background3"
+        android:onClick="industrycomplete"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/step2"
+            android:id="@+id/guideimage"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/infolayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/pc_myprofile_background3"
+        android:onClick="infocompleted"
+        android:visibility="visible"
+        >
+
+        <ImageView
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/step1"
+            android:id="@+id/guideimage"/>
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/progressbar"
+        />
+    </FrameLayout>
